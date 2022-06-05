@@ -1,3 +1,11 @@
+spring:
+  mail:
+    host: ENC(Ge23pxUL/+iy3/dyJvjVtDEf4z5XPTbf)
+    port: 587
+    username: ENC(sBSPSqFQrd8DpVOyFvu7XCsyDHVULm00jLuIPjMUbjo=)
+    password: ENC(fRog+neJ9QDp6+qtdZr7iCV5NsnrTRzy)
+
+
 # Jasypt Setting
 # ADD VM Option : -Djasypt.encryptor.password=
 jasypt:
