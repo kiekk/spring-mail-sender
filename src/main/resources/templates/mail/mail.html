@@ -11,6 +11,27 @@
     <div>
         <h1>안녕하세요.</h1>
         <h2>메일 발송 테스트입니다.</h2>
+        <hr />
+        <h2>데이터 출력 테스트입니다.</h2>
+        <h2>Todo List</h2>
+        <table>
+            <thead>
+            <tr>
+                <td>번호</td>
+                <td>할일</td>
+                <td>완료여부</td>
+                <td>생성일</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="todo : ${todoList}">
+                <td th:text="${todo.id}"></td>
+                <td th:text="${todo.text}"></td>
+                <td th:text="${todo.isDone}"></td>
+                <td th:text="${todo.createDate}"></td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
